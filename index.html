@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Scrambulator</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" href="favicon.png" type="image/x-icon" />
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+<meta property="og:title" content="Scrambulator" />
+<meta property="og:description" content="The Fastest Scramble With Friends Solver!" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.scrambulator.com" />
+<meta property="og:image" content="http://www.scrambulator.com/icon.png" />
+<meta property="og:site_name" content="Scrambulator" />
+<meta property="fb:admins" content="2253805" />
+<meta name="keywords" content="scramble, scramble with friends, words with friends, scramble cheat, scramble solver, scrambulator, scramble with friends cheat, scramble with friends solver, boggle solver, boggle cheat, boggle" />
+<style>
+body { font-family: Arial; }
+#main { margin:0 auto; background: white; padding: 0 1.5em 1.5em; border: 1px solid #cccccc; min-height: 400px; width: 90%; position: relative; }
+#board { margin-left: 1em; letter-spacing: 0.5em; }
+.solution { float: left; font-weight: bold; margin: 10px; }
+.row { padding: 1em; }
+.row:nth-child(odd) { background: #eee; }
+#nocanvas { display: none; color: red; }
+canvas { background: #135b3f; border: 1px solid #00290c; }
+#input { display: none; }
+#out { margin-top: 1em;}
+</style>
+</head>
+<body style="background: #B9E2F6; padding: 0; margin: 0;">
+	<div id="main">
+		<h1>Scrambulator</h1>
+		<div class="loading">Loading...</div>
+		<div id="input">
+			<div style="float:left">
+				<form id="form" onsubmit="return false;">
+					Letters:
+					<input id="letters" type="text">
+					<button disabled>go</button>
+				</form>
+			</div>
+			<div style="float:left" id="board"></div>
+			<div style="clear:both"></div>
+		</div>
+		<div id="total"></div>
+		<div id="out"></div>
+	</div>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script type="text/javascript" src="scrambulator.js"></script>
+</body>
+</html>
